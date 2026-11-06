@@ -1,0 +1,38 @@
+{% extends "!layout.html" %}
+
+{% block extrabody %}
+<a class="skip-link" href="#main-content">Đến nội dung chính</a>
+{% endblock %}
+
+{% block sidebartitle %}
+<a class="docs-brand" href="{{ pathto('index') }}">
+  <img src="{{ pathto('_static/brand.svg', 1) }}" alt="" width="36" height="36">
+  <span>LumiSTEM<span class="brand-caption">DOCUMENTATION</span></span>
+</a>
+<div class="edition"><span class="status-dot"></span>Hướng dẫn dành cho Guest<span class="release">{{ docs_release|e }}</span></div>
+{% include "searchbox.html" %}
+{% endblock %}
+
+{% block navigation %}
+{{ super() }}
+<div class="sidebar-note"><span class="note-symbol" aria-hidden="true">✦</span><strong>Bắt đầu từ một ý tưởng.</strong><p>Tạo khối lệnh, kéo thả chương trình và kết nối thế giới thực.</p><a href="{{ pathto('getting-started/quickstart') }}">Bắt đầu cùng LumiSTEM <span aria-hidden="true">↗</span></a></div>
+<div class="sidebar-bottom"><span>Tiếng Việt</span><span>Guest edition</span></div>
+{% endblock %}
+
+{% block mobile_nav %}
+<button class="menu-toggle" type="button" data-toggle="wy-nav-top" aria-label="Mở hoặc đóng mục lục" aria-expanded="false" aria-controls="docs-navigation">☰</button>
+<a href="{{ pathto('index') }}">LumiSTEM <span>Docs</span></a>
+{% endblock %}
+
+{% block content %}
+<header class="docs-topbar"><span><strong>Tài liệu</strong><span class="topbar-divider">/</span>Hướng dẫn sử dụng</span><a href="https://github.com/lumistem-education/lumistem-documents" rel="noopener noreferrer" target="_blank">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (mở trong tab mới)</span></a></header>
+<div class="docs-workspace{% if pagename == 'index' %} is-home{% endif %}">
+  <div class="docs-main" id="main-content" tabindex="-1">
+    <div class="page-context"><span class="context-line"></span>LUMISTEM DOCS<span class="guest-label">Dành cho Guest</span></div>
+    {{ super() }}
+  </div>
+  {% if display_toc %}
+  <aside class="page-outline" aria-label="Mục lục bài viết"><span class="outline-title">TRONG TRANG NÀY</span>{{ toc }}<div class="outline-help">Bạn mới bắt đầu?<a href="{{ pathto('getting-started/quickstart') }}">Xem hướng dẫn nhanh <span aria-hidden="true">↗</span></a></div></aside>
+  {% endif %}
+</div>
+{% endblock %}

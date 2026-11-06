@@ -1,0 +1,11 @@
+:root {
+  --docs-yellow: #ffd332;
+  --docs-yellow-soft: #fff8d9;
+  --docs-ink: #1b1c1e;
+  --docs-muted: #62666d;
+  --docs-line: #e9eaec;
+  --docs-paper: #fff;
+  --docs-surface: #f8f9fa;
+  --docs-sidebar-width: 288px;
+  --docs-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
