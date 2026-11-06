@@ -25,13 +25,9 @@ Các thành phần
 Luồng làm việc của guest
 ------------------------
 
-.. container:: flow
-
-   **Kitchen → file JSON → Blockly** để chuyển tài nguyên.
-
-   **Blockly → Connector local → bo mạch** để biên dịch và nạp.
-
-   **Ứng dụng → Gateway → dữ liệu công khai** khi bản triển khai có sử dụng API.
+* **Kitchen → file JSON → Blockly** để chuyển tài nguyên.
+* **Blockly → Connector local → bo mạch** để biên dịch và nạp.
+* **Ứng dụng → Gateway → dữ liệu công khai** khi bản triển khai có sử dụng API.
 
 Đọc dữ liệu công khai
 ---------------------

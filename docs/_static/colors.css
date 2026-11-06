@@ -1,0 +1,99 @@
+body,
+.wy-body-for-nav,
+.wy-nav-content-wrap,
+.wy-nav-content,
+.wy-nav-side,
+.wy-menu-vertical li.current,
+.wy-menu-vertical li ul,
+.rst-content .highlight,
+.rst-content pre,
+.rst-content code,
+.rst-content tt,
+.rst-content code.literal,
+.rst-content tt.literal,
+.rst-content table.docutils td,
+.rst-content table.docutils th,
+.rst-content .wy-table-responsive table td,
+.rst-content .wy-table-responsive table th {
+  background: #fff;
+  color: #000;
+}
+
+a,
+a:visited,
+a:hover,
+.wy-menu-vertical a,
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current a,
+.wy-menu-vertical li.current a:hover,
+.wy-menu-vertical p.caption,
+.wy-menu-vertical header,
+.wy-menu-vertical button.toctree-expand,
+.wy-side-nav-search,
+.wy-side-nav-search > a,
+.wy-side-nav-search > a:hover,
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search input[type="text"],
+.wy-nav-top,
+.wy-nav-top a,
+.wy-breadcrumbs,
+.rst-content .headerlink,
+.rst-content .viewcode-link,
+footer,
+footer a,
+.btn,
+.btn:visited {
+  color: #000;
+}
+
+.wy-side-nav-search,
+.wy-nav-top,
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:hover,
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.on a:hover,
+.rst-content .admonition-title,
+.rst-content table.docutils thead th,
+.highlighted,
+.btn:hover {
+  background: #ffd332;
+  color: #000;
+}
+
+.wy-side-nav-search input[type="text"],
+.rst-content .admonition,
+.rst-content .admonition p.admonition-title,
+.rst-content .admonition-title::before,
+.btn-neutral,
+.btn-neutral:visited {
+  background: #fff;
+  color: #000;
+}
+
+.rst-content .admonition p.admonition-title {
+  background: #ffd332;
+}
+
+.wy-side-nav-search input[type="text"]::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.wy-menu-vertical li.current a,
+.wy-side-nav-search input[type="text"],
+.rst-content .admonition,
+.rst-content div[class^="highlight"],
+.rst-content code,
+.rst-content tt,
+.rst-content table.docutils,
+.rst-content table.docutils td,
+.rst-content table.docutils th,
+.btn,
+hr {
+  border-color: #000;
+}
+
+:focus-visible {
+  outline-color: #000;
+}
