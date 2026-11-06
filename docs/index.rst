@@ -15,7 +15,7 @@ Bộ phần mềm
   kết nối Connector local để biên dịch, nạp chương trình.
 
 Lộ trình sử dụng
----------------
+----------------
 
 #. Chuẩn bị trình duyệt và một thư mục lưu dự án.
 #. Tạo tài nguyên riêng bằng Kitchen nếu cần.
